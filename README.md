@@ -1,4 +1,4 @@
-# AWS EKS & Secrets Manager (File & Env | Kubernetes | Secrets Store CSI Driver | K8s)
+# AWS EKS & System Manager (File & Env | Kubernetes | Secrets Store CSI Driver | K8s)
 
 ## 1. Create Secret in AWS System Manager
 - Select `Application Management`
