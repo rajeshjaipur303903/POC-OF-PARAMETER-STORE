@@ -10,9 +10,11 @@
 
 
 ## 2. Create a test parameter.
+#(Optionally)
+USE CLI
+```bash
   REGION=region
   CLUSTERNAME=clustername
-```bash
 aws ssm put-parameter --name "NAME" --value "EKS parameter" --type String --region "$Region"
 ```
 
