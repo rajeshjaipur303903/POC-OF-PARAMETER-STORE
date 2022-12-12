@@ -34,7 +34,7 @@ eksctl create cluster -f eks.yaml
 kubectl get svc
 ```
 
-## 6. Create IAM OpenID Connect()  Provider for EKS
+## 6. Create IAM OpenID Connect(OIDC)  Provider for EKS
 USE CLI
 ```bash
 eksctl utils associate-iam-oidc-provider --region="$REGION" --cluster="$CLUSTERNAME" --approve # Only run this once
