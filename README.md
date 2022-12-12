@@ -15,7 +15,7 @@ USE CLI
 ```bash
   REGION=region
   CLUSTERNAME=clustername
-aws ssm put-parameter --name "NAME" --value "EKS parameter" --type String --region "$Region"
+aws ssm put-parameter --name "NAME" --value "VALUE" --type String --region "$Region"
 ```
 
 ## 4. To display the ARN of a parameter
@@ -45,6 +45,7 @@ eksctl utils associate-iam-oidc-provider --region="$REGION" --cluster="$CLUSTERN
 - Enter `sts.amazonaws.com` for Audience
 
 ## 7. Create IAM Policy 
+We can use console or CLI
 #1. For SecureString
 - The retrieval of secrets from AWS Secrets Manager and AWS SSM Parameter Store
 - The use of a KMS key (required if the secrets are encrypted).
@@ -165,6 +166,9 @@ kubectl apply -f secrets-store-csi-driver
 - Create `secrets-store-csi-driver/5-daemonset.yaml`
 - Create `secrets-store-csi-driver/6-csi-driver.yaml`
 - Apply Kubernetes objects
+```bash
+kubectl apply -f secrets-store-csi-driver1
+```
 ```bash
 kubectl apply -f secrets-store-csi-driver
 ```
