@@ -9,7 +9,7 @@
 - Value: `value` 
 
 
-## 2. Create a test parameter.
+## 2. Create parameter.
 #(Optionally)
 USE CLI
 ```bash
