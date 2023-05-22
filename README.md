@@ -79,7 +79,7 @@ We can use console or CLI
                 "kms:Decrypt",
                 "kms:GetKeyRotationStatus",
                 "kms:GetKeyPolicy",
-                "kms:DescribeKey",
+                "kms:DescribeKey"
             ],
             "Effect": "Allow",
             "Resource": "<KMS_KEY_ARN>"
