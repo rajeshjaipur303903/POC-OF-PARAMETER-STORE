@@ -12,13 +12,9 @@ spec:
     data: 
     - objectName: secret-token
       key: SECRET_TOKEN
-    - objectName: secret-token1
-      key: SECRET_TOKEN1
   parameters:
     objects: |
-      - objectName: /spikeseed/blog/myparameter1
+      - objectName: /prod/MongoDB/ADMIN_DB
         objectType: ssmparameter
         objectAlias: secret-token
-      - objectName: newsecret
-        objectType: ssmparameter
-        objectAlias: secret-token1
+
